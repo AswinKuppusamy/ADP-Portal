@@ -1,0 +1,42 @@
+<a href="#!/adrmn">Go Back</a>
+
+<div class="panel panel-default">
+  <div class="panel-heading">
+    <h3 class="panel-title">Add Your Documents</h3>
+  </div>
+  <div class="panel-body">
+    <div class="row">
+      <div class="col-md-12">
+      <form ng-submit="addadr()">
+        <div class="form-group">
+          <label>Title</label>
+          <input type="text" class="form-control" ng-model="adr.Title" placeholder="Title">
+        </div>
+        <div class="form-group">
+          <label>Status</label>
+          <select ng-model="adr.Status" class="form-control">
+            <option value="New">New</option>
+            <option value="Inprogress">Inprogress</option>
+            <option value="Approved">Approved</option>
+			<option value="Rejected">Rejected</option>
+            <option value="Returned">Returned</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label>Author</label>
+          <input type="text" class="form-control" ng-model="adr.Author" placeholder="Author">
+        </div>
+        <div class="form-group">
+          <label>Description</label>
+          <input type="text" class="form-control" ng-model="adr.Description" placeholder="Description">
+        </div>
+        <div class="form-group">
+          <label>Context</label>
+          <textarea class="form-control" ng-model="adr.Context" placeholder="Context"></textarea>
+        </div>
+        <button type="submit" class="btn btn-default">Submit</button>
+      </form>
+    </div>
+    </div>
+  </div>
+</div>
